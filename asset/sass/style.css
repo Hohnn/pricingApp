@@ -1,0 +1,203 @@
+/* ### Primary
+
+- Soft Cyan (Full Slider Bar): hsl(174, 77%, 80%)
+- Strong Cyan (Slider Backround): hsl(174, 86%, 45%)
+- Light Grayish Red (Discount Background): hsl(14, 92%, 95%)
+- Light Red (Discount Text): hsl(15, 100%, 70%)
+- Pale Blue (CTA Text): hsl(226, 100%, 87%)
+
+### Neutral
+
+- White (Pricing Component Background): hsl (0, 0%, 100%)
+- Very Pale Blue (Main Background): hsl(230, 100%, 99%)
+- Light Grayish Blue (Empty Slider Bar): hsl(224, 65%, 95%)
+- Light Grayish Blue (Toggle Background): hsl(223, 50%, 87%)
+- Grayish Blue (Text): hsl(225, 20%, 60%)
+- Dark Desaturated Blue (Text & CTA Background): hsl(227, 35%, 25%) */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  color: #858fad;
+  background-image: url(/images/bg-pattern.svg);
+  background-repeat: no-repeat;
+}
+
+header {
+  margin: 120px 0 100px 0;
+  position: relative;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: black;
+  padding-bottom: 10px;
+}
+
+header h2 {
+  font-size: 1rem;
+}
+
+header img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main {
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 10px 20px 1px rgba(55, 87, 134, 0.26);
+          box-shadow: 0 10px 20px 1px rgba(55, 87, 134, 0.26);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+main .topCard {
+  width: 100%;
+  border-bottom: 2px solid #eaeefb;
+}
+
+main .topCard .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .topCard .price p:first-of-type {
+  letter-spacing: 0.1rem;
+}
+
+main .topCard .price .priceNumber {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 16px;
+}
+
+main .slider {
+  position: relative;
+  margin: 30px 0;
+}
+
+main .slider .button {
+  background-color: #10d5c2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(/images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0 20px 20px #a5f3eb;
+          box-shadow: 0 20px 20px #a5f3eb;
+  z-index: 10;
+  border: none;
+}
+
+main .slider .slide {
+  width: 100%;
+  height: 10px;
+  background-color: #eaeefb;
+  border-radius: 5px;
+  position: relative;
+}
+
+main .slider .slide::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: #a5f3eb;
+  left: 0;
+  border-radius: 10px;
+}
+
+main .billing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 0.9rem;
+  padding: 30px 0 0 0;
+}
+
+main .billing .toggle {
+  width: 50px;
+  height: 22px;
+  background-color: #cdd7ee;
+  border-radius: 11px;
+  margin: 0 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+main .billing .toggle::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: white;
+  top: 50%;
+  left: 3px;
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+}
+
+main .billing .discount {
+  background-color: #feece7;
+  color: #ff8c66;
+  padding: 2px 6px;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+
+main .option {
+  text-align: start;
+  padding: 35px 40px;
+}
+
+main .option :nth-child(2) {
+  margin: 8px 0;
+}
+
+main .option img {
+  margin: 0 15px;
+}
+
+main .trial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .trial button {
+  padding: 10px 50px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background-color: #293356;
+}
+/*# sourceMappingURL=style.css.map */
