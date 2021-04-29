@@ -84,25 +84,15 @@ main .topCard .price .priceNumber {
 main .slider {
   position: relative;
   margin: 30px 0;
-}
-
-main .slider .button {
-  background-color: #10d5c2;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-image: url(/images/icon-slider.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-box-shadow: 0 20px 20px #a5f3eb;
-          box-shadow: 0 20px 20px #a5f3eb;
-  z-index: 10;
-  border: none;
+  /* .slide::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            background-color: $Soft-Cyan;
+            left: 0;
+            border-radius: 10px;
+        } */
 }
 
 main .slider .slide {
@@ -111,16 +101,24 @@ main .slider .slide {
   background-color: #eaeefb;
   border-radius: 5px;
   position: relative;
+  -webkit-appearance: none;
+  -webkit-transition: .8s ease;
+  transition: .8s ease;
 }
 
-main .slider .slide::after {
-  content: '';
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  background-color: #a5f3eb;
-  left: 0;
-  border-radius: 10px;
+main .slider .slide::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #10d5c2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(/images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  -webkit-box-shadow: 0 20px 20px #a5f3eb;
+          box-shadow: 0 20px 20px #a5f3eb;
 }
 
 main .billing {
