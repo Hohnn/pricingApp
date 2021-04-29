@@ -145,6 +145,12 @@ main .billing .toggle {
   margin: 0 20px;
   position: relative;
   cursor: pointer;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
+
+main .billing .toggle:hover {
+  background-color: #a5f3eb;
 }
 
 main .billing .toggle::after {
@@ -158,6 +164,12 @@ main .billing .toggle::after {
   left: 3px;
   -webkit-transform: translatey(-50%);
           transform: translatey(-50%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main .billing .toggleActive::after {
+  left: 30px;
 }
 
 main .billing .discount {
@@ -191,6 +203,8 @@ main .trial {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 main .trial button {
@@ -199,5 +213,10 @@ main .trial button {
   border: none;
   color: white;
   background-color: #293356;
+}
+
+main .trial:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=style.css.map */

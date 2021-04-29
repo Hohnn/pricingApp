@@ -131,6 +131,10 @@ main {
             margin: 0 20px;
             position: relative;
             cursor: pointer;
+            transition: .5s ease-out;
+        }
+        .toggle:hover {
+            background-color: $Soft-Cyan;
         }
         .toggle::after {
             content: '';
@@ -142,6 +146,10 @@ main {
             top: 50%;
             left: 3px;
             transform: translatey(-50%);
+            transition: 1s;            
+        }
+        .toggleActive::after{
+            left: 30px;
         }
         .discount {
             background-color: $Light-grayish-red;
@@ -165,6 +173,7 @@ main {
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: 1s;
         button {
             padding: 10px 50px;
             border-radius: 50px;
@@ -174,7 +183,12 @@ main {
 
         }
     }
+    .trial:hover {
+        transform: scale(1.1);
+    }
 }
+
+
 
 
 
